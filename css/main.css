@@ -134,7 +134,7 @@ nav {
   background-color: transparentize;
   padding: 10px 0px;
   position: fixed;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid red;
   z-index: 100;
 }
 nav:hover {
@@ -152,7 +152,7 @@ nav:hover ul li a {
   color: rgba(105, 73, 71, 0.5);
 }
 nav .logo img {
-  width: 100%;
+  width: 80%;
 }
 nav ul {
   margin: 0px;
@@ -213,7 +213,7 @@ nav ul li a:hover:after {
   padding: 25px 0px;
 }
 .nav-overlay .logo img {
-  width: 80%;
+  width: 100%;
 }
 .nav-overlay ul {
   margin-top: 8px;
@@ -447,4 +447,25 @@ footer hr {
 .seccion p {
   font-size: 20px;
   color: blue;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.main-title{
+      font-size: 3rem;
+      background: linear-gradient(90deg, #09f53c, #0707f0 );
+      background-size: 200% auto;
+      color: transparent;
+      -webkit-background-clip: text;
+      animation: wave 2s linear infinite;
+      text-align: center;
+    }
+
+    @keyframes wave{
+      0%{background-position: 0% center;}
+      100%{background-position: 200% center;}
+    }
+
+
+
+
+
+/*# sourceMappingURL=main.css.map */
