@@ -134,11 +134,11 @@ nav {
   background-color: transparentize;
   padding: 10px 0px;
   position: fixed;
-  border-bottom: 1px solid red;
+  /*border-bottom: 1px solid red;*/
   z-index: 100;
 }
 nav:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 25px 0px;
   border-bottom: 1px solid rgba(6, 10, 15, 0.1);
 }
