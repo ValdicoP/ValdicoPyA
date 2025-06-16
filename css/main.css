@@ -122,8 +122,8 @@ button:hover {
   width: 100%;
   overflow: hidden;
   margin: 0px auto;
-  background-image: url(../images/rombo.jpg);
-  background-size: 100%;
+  background-image: url(../images/CasaOroCristal.png);
+  background-size: 80%;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 50;
@@ -247,6 +247,12 @@ nav ul li a:hover:after {
 }
 #slippry .right {
   right: 200px;
+}
+#slippry .top_140 {
+  top: 140px;
+}
+#slippry .top_190 {
+  top: 190px;
 }
 #slippry .top_250 {
   top: 250px;
