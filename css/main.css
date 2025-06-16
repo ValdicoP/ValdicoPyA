@@ -29,6 +29,10 @@ textarea, a {
   padding: 100px 0px;
 }
 
+.pad_120{
+  padding: 120px,0px;
+}
+
 .pad_250 {
   padding: 100px 0px;
 }
@@ -126,7 +130,7 @@ button:hover {
   width: 100%;
   overflow: hidden;
   margin: 0px auto;
-  background-image: url(../images/CasaOroCristal.png);
+  background-image: url(../images/casamadera.png);
   background-size: 80%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -460,7 +464,7 @@ footer hr {
 }
 
 .main-title{
-      font-size: 3rem;
+      font-size: 2rem;
       background: linear-gradient(90deg, #09f53c, #0707f0 );
       background-size: 200% auto;
       color: transparent;
@@ -473,9 +477,6 @@ footer hr {
       0%{background-position: 0% center;}
       100%{background-position: 200% center;}
     }
-
-
-
 
 
 /*# sourceMappingURL=main.css.map */
