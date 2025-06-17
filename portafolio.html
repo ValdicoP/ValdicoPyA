@@ -148,18 +148,18 @@
                     </div>
                     <!--End col 2-->
                     <!--col 6-->
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 gallery">
                         <p class="white"><strong>Tumblr</strong></p>
-                        <img src="images/square_01.jpg" alt="imagen 01" class="tumblr">
-                        <img src="images/square_02.jpg" alt="imagen 02" class="tumblr">
-                        <img src="images/square_03.jpg" alt="imagen 03" class="tumblr">
-                        <img src="images/square_04.jpg" alt="imagen 04" class="tumblr">
-                        <img src="images/square_05.jpg" alt="imagen 05" class="tumblr">
-                        <img src="images/square_06.jpg" alt="imagen 06" class="tumblr">
-                        <img src="images/square_07.jpg" alt="imagen 07" class="tumblr">
-                        <img src="images/square_08.jpg" alt="imagen 08" class="tumblr">
-                        <img src="images/square_09.jpg" alt="imagen 09" class="tumblr">
-                        <img src="images/square_10.jpg" alt="imagen 10" class="tumblr">
+					    <img src="images/square_01.jpg" alt="imagen 01" class="tumblr" data-full="images/square_01.jpg">
+					    <img src="images/square_02.jpg" alt="imagen 02" class="tumblr" data-full="images/square_02.jpg">
+					    <img src="images/square_03.jpg" alt="imagen 03" class="tumblr" data-full="images/square_03.jpg">
+					    <img src="images/square_04.jpg" alt="imagen 04" class="tumblr" data-full="images/square_04.jpg">
+					    <img src="images/square_05.jpg" alt="imagen 05" class="tumblr" data-full="images/square_05.jpg">
+					    <img src="images/square_06.jpg" alt="imagen 06" class="tumblr" data-full="images/square_06.jpg">
+					    <img src="images/square_07.jpg" alt="imagen 07" class="tumblr" data-full="images/square_07.jpg">
+					    <img src="images/square_08.jpg" alt="imagen 08" class="tumblr" data-full="images/square_08.jpg">
+					    <img src="images/square_09.jpg" alt="imagen 09" class="tumblr" data-full="images/square_09.jpg">
+					    <img src="images/square_10.jpg" alt="imagen 10" class="tumblr" data-full="images/square_10.jpg">
                     </div>
                     <!--End col 6-->
                     <!--col 4-->
@@ -197,7 +197,11 @@
          </div>
     
         <!-- ends footer-->
-
+    <!-- Modales -->
+        <div class="modal" id="modal">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <img id="modalImg" src="" alt="Imagen ampliada">
+        </div>
 
 	<!--Bootstrap 4 JS CDN-->
 
@@ -244,6 +248,57 @@
 		$(window).scroll();
     });
 	</script>
+
+<script>
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.getElementById("closeBtn");
+  const openSound = document.getElementById("openSound");
+  const closeSound = document.getElementById("closeSound");
+  const closeNav = document.getElementById("nav");
+
+  const images = document.querySelectorAll(".gallery img");
+  let currentIndex = 0;
+
+  function openModal(index) {
+    const img = images[index];
+    modalImg.src = img.dataset.full;
+    modal.style.display = "flex";
+    openSound.play();
+	closeNav.style.display = "none"
+
+    currentIndex = index;
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+    modalImg.src = "";
+    closeSound.play();
+  }
+
+  images.forEach((img, index) => {
+    img.addEventListener("click", () => openModal(index));
+  });
+
+  closeBtn.addEventListener("click", closeModal);
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (modal.style.display === "flex") {
+      if (e.key === "Escape") {
+        closeModal();
+      } else if (e.key === "ArrowRight") {
+        currentIndex = (currentIndex + 1) % images.length;
+        openModal(currentIndex);
+      } else if (e.key === "ArrowLeft") {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        openModal(currentIndex);
+      }
+    }
+  });
+</script>
 
 </body>
 
