@@ -9,7 +9,7 @@
 
 	<!-- Seo Natural-->
 	<meta name="author" content="Construccion">
-	<meta name="copyright" content="Valdico Perez y Asociados 2025. Todos los derechos reservados">
+	<meta name="copyright" content="Grupo Valdico Perez y Asociados 2025. Todos los derechos reservados">
 	<meta name="email" content="produccion.vp@hotmail.com">
 	<meta name="robots" content="index,follow">
 	<meta name="description"
@@ -42,7 +42,7 @@
 	<link rel="icon" href="favicon/img-1-ico?v=2" type="image/x-icon">
 
 	<!-- Responsividad -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1, user-scalable=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!--Font Awesome 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"> CDN-->
@@ -81,20 +81,20 @@
 		<ul id="slippry">
 			<li>
 				<h3 class="left top_140">Nuestras experiencias</h3>
-				<p class="left top_190 white_bg">Valdico Perez se ha caracterizado por su constante crecimiento, desarrollo y por ser una empresa comprometida con la satisfacción de sus clientes.</p>
+				<p class="left top_190 white_bg">Grupo Valdico Perez y Asociados, se ha caracterizado por su constante crecimiento, desarrollo y por ser una empresa comprometida con la satisfacción de sus clientes.</p>
 				<button class="left top_300 black">Contactanos</button>
 				<img src="images/slide_1.jpg" alt="Slide1">
 			</li>
 
 			<li>
 				<h3 class="right top_140">Años de experiencia</h3>
-				<p class="right top_190">A lo largo de estos 18 años de experiencias que nos respaldan, Valdico Perez. Es una empresa dedicada dar soluciones y respaldar a sus clientes en sus diferentes proyectos.</p>
+				<p class="right top_190">A lo largo de estos 18 años de experiencias que nos respaldan, Grupo Valdico Perez y Asociados. Es una empresa dedicada dar soluciones y respaldar a sus clientes en sus diferentes proyectos.</p>
 				<img src="images/slide_2.jpg" alt="Slide2">
 				<button class="right top_300 black">Escribenos</button>
 			</li>
 
 			<li>
-				<h3 class="right top_140">Grupo Valdico Perez - Construccion y Tramites </h3>
+				<h3 class="right top_140">Grupo Valdico Perez y Asociados - Construccion y Tramites </h3>
 				<p class="right top_190">Avalúos.
 					Supervicion y estimacion de Obra.
 					Estimaciones GeneradorasDiseño y construccion de Albercas.
@@ -133,7 +133,7 @@
 					</div>
 
 					<div class="col">
-						<h3><strong>Grupo Valdico Perez</strong> <span>&nbsp;&nbsp;Experiencia</span></h3>
+						<h3><strong>Grupo Valdico Perez y Asociados</strong> <span>&nbsp;&nbsp;Experiencia</span></h3>
 						<p>18 años de experiencias nos avalan en el ramo de construccion, Avaluos y tramites, a lo largo de estos años, nos caracterisamos en <strong>Grupo Valdico Perez</strong> por ser una empresa responsable, seria y de un trato amable con nuestros clientes.</p>
 						<button>Experiencia</button>
 					</div>
@@ -200,18 +200,22 @@
 				</div>
 				<!--End col 2-->
 				<!--col 6-->
-				<div class="col-xl-6">
+				<div class="col-6">
 					<p class="white"><strong>Tumblr</strong></p>
-					<img src="images/square_01.jpg" alt="imagen 01" class="tumblr">
-					<img src="images/square_02.jpg" alt="imagen 02" class="tumblr">
-					<img src="images/square_03.jpg" alt="imagen 03" class="tumblr">
-					<img src="images/square_04.jpg" alt="imagen 04" class="tumblr">
-					<img src="images/square_05.jpg" alt="imagen 05" class="tumblr">
-					<img src="images/square_06.jpg" alt="imagen 06" class="tumblr">
-					<img src="images/square_07.jpg" alt="imagen 07" class="tumblr">
-					<img src="images/square_08.jpg" alt="imagen 08" class="tumblr">
-					<img src="images/square_09.jpg" alt="imagen 09" class="tumblr">
-					<img src="images/square_10.jpg" alt="imagen 10" class="tumblr">
+                    <div class="gallery">
+					    <img src="images/square_01.jpg" alt="imagen 01" class="tumblr" data-full="images/square_01.jpg">
+					    <img src="images/square_02.jpg" alt="imagen 02" class="tumblr" data-full="images/square_02.jpg">
+					    <img src="images/square_03.jpg" alt="imagen 03" class="tumblr" data-full="images/square_03.jpg">
+					    <img src="images/square_04.jpg" alt="imagen 04" class="tumblr" data-full="images/square_04.jpg">
+					    <img src="images/square_05.jpg" alt="imagen 05" class="tumblr" data-full="images/square_05.jpg">
+					    <img src="images/square_06.jpg" alt="imagen 06" class="tumblr" data-full="images/square_06.jpg">
+					    <img src="images/square_07.jpg" alt="imagen 07" class="tumblr" data-full="images/square_07.jpg">
+					    <img src="images/square_08.jpg" alt="imagen 08" class="tumblr" data-full="images/square_08.jpg">
+					    <img src="images/square_09.jpg" alt="imagen 09" class="tumblr" data-full="images/square_09.jpg">
+					    <img src="images/square_10.jpg" alt="imagen 10" class="tumblr" data-full="images/square_10.jpg">
+                    </div>
+
+
 				</div>
 				<!--End col 6-->
 				<!--col 4-->
@@ -250,6 +254,11 @@
 
 	<!-- ends footer-->
 
+    <!-- Modales -->
+        <div class="modal" id="modal">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <img id="modalImg" src="" alt="Imagen ampliada">
+        </div>
 
 	<!--Bootstrap 4 JS CDN-->
 
@@ -291,10 +300,59 @@
 				$('#nav').removeClass("nav-overlay");
 			}
 		});
-		$(window).scroll();
-		
+		$(window).scroll();		
 	</script>
 
+<script>
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.getElementById("closeBtn");
+  const openSound = document.getElementById("openSound");
+  const closeSound = document.getElementById("closeSound");
+  const closeNav = document.getElementById("nav");
+
+  const images = document.querySelectorAll(".gallery img");
+  let currentIndex = 0;
+
+  function openModal(index) {
+    const img = images[index];
+    modalImg.src = img.dataset.full;
+    modal.style.display = "flex";
+    openSound.play();
+	closeNav.style.display = "none"
+
+    currentIndex = index;
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+    modalImg.src = "";
+    closeSound.play();
+  }
+
+  images.forEach((img, index) => {
+    img.addEventListener("click", () => openModal(index));
+  });
+
+  closeBtn.addEventListener("click", closeModal);
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (modal.style.display === "flex") {
+      if (e.key === "Escape") {
+        closeModal();
+      } else if (e.key === "ArrowRight") {
+        currentIndex = (currentIndex + 1) % images.length;
+        openModal(currentIndex);
+      } else if (e.key === "ArrowLeft") {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        openModal(currentIndex);
+      }
+    }
+  });
+</script>
 </body>
 
 </html>
