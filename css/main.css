@@ -1,4 +1,3 @@
-
 a {
   margin: 0px;
   padding: 0px;
@@ -65,7 +64,9 @@ textarea {
   margin: 5px 0px;
   opacity: 0.5;
 }
-input:hover, input:focus,
+
+input:hover, 
+input:focus,
 select:hover,
 select:focus,
 option:hover,
@@ -140,12 +141,15 @@ button:hover {
 }
 
 nav {
+  /*border-bottom: 1px solid red;*/
   width: 100%;
+  max-height: 300px;
   background-color: transparentize;
   padding: 10px 0px;
-  position: fixed;
-  /*border-bottom: 1px solid red;*/
-  z-index: 180;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  z-index: 1000;
 
 }
 nav:hover {
@@ -185,7 +189,7 @@ nav ul li {
 nav ul li a {
   position: relative;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1em;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -219,7 +223,7 @@ nav ul li a:hover:after {
 }
 
 .nav-overlay {
-  background-color: white;
+  background-color: rgb(253, 251, 251);
   border-bottom: 1px solid rgba(6, 10, 15, 0.1);
   padding: 25px 0px;
 
@@ -236,48 +240,60 @@ nav ul li a:hover:after {
 
 #slider {
   backface-visibility: hidden;
-  -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
-  -o-clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
-  clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%);
+  clip-path: polygon(100% 0%, 100% 100%, 50% 90%, 0% 100%, 0% 0%);
+  overflow: hidden; /* Oculta el contenido que se sale del contenedor */
 }
 
 #slippry {
   position: relative;
+  top: 155px;
 }
+
 #slippry h1, #slippry h2, #slippry h3, #slippry h4, #slippry h5, #slippry h6, #slippry p, #slippry a, #slippry button {
   position: absolute;
 }
+
 #slippry p {
   width: 600px;
 }
+
 #slippry .white_bg {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 5px 10px;
 }
+
 #slippry .left {
   left: 200px;
 }
+
 #slippry .right {
   right: 200px;
 }
+
 #slippry .top_140 {
   top: 140px;
 }
+
 #slippry .top_190 {
   top: 190px;
 }
+
 #slippry .top_250 {
   top: 250px;
 }
+
 #slippry .top_300 {
   top: 300px;
 }
+
 #slippry .top_375 {
   top: 375px;
 }
+
 #slippry .top_400 {
   top: 400px;
 }
+
 #slippry .top_450 {
   top: 450px;
 }
@@ -339,16 +355,19 @@ nav ul li a:hover:after {
   height: 100vh;
   background-color: transparent;
 }
+
 #contacto ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
+
 #contacto ul li {
   float: left;
   padding: 0px;
   margin: 0px;
 }
+
 #contacto ul .google-maps {
   width: 66.6%;
   height: 100vh;
@@ -356,6 +375,7 @@ nav ul li a:hover:after {
   background-position: center center;
   background-size: cover;
 }
+
 #contacto ul .formulario {
   width: 33.3%;
   height: 100vh;
@@ -364,31 +384,36 @@ nav ul li a:hover:after {
 }
 
 footer {
-  margin-top: -60px;
+  margin-top: 60px;
   width: 100%;
   background-color: #060a0f;
-  padding: 70px 0px;
+  padding: 98px 0px;
   -webkit-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
   -o-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
 }
+
 footer p {
   margin: 0px;
   padding: 0px;
 }
+
 footer .white {
   color: rgb(252, 249, 249);
 }
+
 footer ul {
   padding: 0px;
   margin: 0px;
   list-style: none;
 }
+
 footer ul li {
   padding: 0px;
   margin: 0px;
   color: rgba(255, 255, 255, 0.2);
 }
+
 footer hr {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -403,6 +428,7 @@ footer hr {
   cursor: pointer;
   opacity: 0.4;
 }
+
 .tumblr:hover {
   opacity: 1;
 }
@@ -412,15 +438,18 @@ footer hr {
   background-color: #070c13;
   text-align: left;
 }
+
 .copy p, .copy a {
   margin: 0px;
   padding: 0px;
   color: rgba(255, 255, 255, 0.3);
 }
+
 .copy a {
   opacity: 0.5;
   color: #ff6600;
 }
+
 .copy a:hover {
   opacity: 1;
   text-decoration: none;
@@ -429,11 +458,12 @@ footer hr {
 .social-networks {
   margin-top: 5px;
 }
+
 .social-networks li {
   display: inline-block;
   position: relative;
   margin: 0px 7px;
-  float: left;
+  /*float: left;*/
   width: 30px;
   height: 30px;
   text-align: center;
@@ -441,17 +471,20 @@ footer hr {
   backface-visibility: hidden;
   cursor: pointer;
 }
+
 .social-networks li i {
   font-size: 22px;
   color: rgba(255, 255, 255, 0.2);
   transform: rotate(0deg) translate(-3px 3px);
   backface-visibility: hidden;
 }
+
 .social-networks li:hover {
   transform: rotate(45deg);
   background-color: white;
   backface-visibility: hidden;
 }
+
 .social-networks li:hover i {
   color: #060a0f;
   transform: rotate(-45deg) translate(-3px, 3px);
@@ -462,6 +495,7 @@ footer hr {
   font-size: 20px;
   color: blue;
 }
+
 .seccion p {
   font-size: 20px;
   color: blue;
@@ -472,7 +506,7 @@ footer hr {
       background: linear-gradient(90deg, #09f53c, #0707f0 );
       background-size: 200% auto;
       color: transparent;
-      -webkit-background-clip: text;
+      /*-webkit-background-clip: text;*/
       -o-clip-path: text;
       clip-path: text;
       animation: wave 2s linear infinite;
@@ -485,7 +519,7 @@ footer hr {
     }
 
 /***************************************************************************************/
-    .gallery {
+.gallery {
       position: absolute;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
@@ -494,7 +528,7 @@ footer hr {
       z-index: 300;
     }
 
-    .gallery img {
+.gallery img {
       width: 20%;
       border-radius: 15px;
       cursor: pointer;
@@ -502,12 +536,12 @@ footer hr {
       box-shadow: 0 0 10px #00f0ff88;
     }
 
-    .gallery img:hover {
+.gallery img:hover {
       transform: scale(1.09);
       box-shadow: 0 0 25px #00f0ff;
     }
 
-    .modal {
+.modal {
       display: none;
       position: fixed;
       top: 0;
@@ -523,7 +557,7 @@ footer hr {
       z-index: 199;
     }
 
-    .modal img {
+.modal img {
       position: fixed;
       max-width: 80%;
       max-height: 80%;
@@ -534,14 +568,14 @@ footer hr {
       animation: glow 2s infinite alternate;
     }
 
-    @keyframes glow {
-      0% {
-        box-shadow: 0 0 20px #00ffe0, 0 0 40px #ff00ff;
-      }
-      100% {
-        box-shadow: 0 0 50px #00ffe0, 0 0 100px #ff00ff;
-      }
-    }
+@keyframes glow {
+   0% {
+     box-shadow: 0 0 20px #00ffe0, 0 0 40px #ff00ff;
+   }
+   100% {
+     box-shadow: 0 0 50px #00ffe0, 0 0 100px #ff00ff;
+   }
+ }
 
     @keyframes fadeIn {
       from { opacity: 0; }
@@ -576,27 +610,34 @@ footer hr {
     position: absolute;
     right: 0;
     top: 0;
-    width: 300px;
+    width: 50px;
+    margin-top: 20PX;
+
 }
+
 .card:hover {
     height: 450px;
     width: 300px;
 }
+
 .card:hover .cta-container {
     display: inline;
     margin-top: 380px;
 }
+
 .card:hover .card_circle {
     background-size: cover;
     border-radius: 0;
     margin-top: -130px;
 }
+
 .card:hover h2 {
     background: #3487f7;
     color: #fff;
     margin-top: 100px;
     padding: 5px;
 }
+
 .card:hover h2 small { color: #fff }
 .card:hover p { margin-top: 300px }
 .card_circle {
@@ -610,10 +651,11 @@ footer hr {
     position: absolute;
     width: 450px;
 }
+
 .h2text {
     color: #3487f7;
     font-family: 'Raleway', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 200;
     margin-top: 150px;
     position: absolute;
@@ -621,6 +663,7 @@ footer hr {
     width: 100%;
     z-index: 10;
 }
+
 p.TextCard {
     color: rgba(0,0,0,.6);
     font-family: 'Raleway', sans-serif;
@@ -631,14 +674,16 @@ p.TextCard {
     text-align: center;
     z-index: 10;
 }
+
 .cta-container {
     display: none;
-    margin-top: 320px;
+    margin-top: 20px;
     position: absolute;
     text-align: center;
     width: 100%;
     z-index: 10;
 }
+
 .cta {
     -moz-border-radius: 2px;
     -moz-transition: 0.2s ease-out;
@@ -663,6 +708,7 @@ p.TextCard {
     text-transform: uppercase;
     transition: 0.2s ease-out;
 }
+
 .cta:hover {
     background-color: #3487f7;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -671,13 +717,14 @@ p.TextCard {
     -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*NAv oculto*/
+/*NAv oculto
 
 @media screen and (max-width: 575px){
   .nav-overlay{
     display: none;
   }
 }
+*/
 
 .links-dos{
 background-image: url("../images/LogoV.png");
@@ -690,9 +737,24 @@ height: 110px;
 
 .links-dos ul li a{
   color: black !important;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
 }
+
+.main-title{
+      font-size: 3rem;
+      background: linear-gradient(90deg, #09f53c, #0707f0 );
+      background-size: 200% auto;
+      color: transparent;
+      background-clip: text;
+      animation: wave 2s linear infinite;
+      text-align: center;
+    }
+
+    @keyframes wave{
+      0%{background-position: 0% center;}
+      100%{background-position: 200% center;}
+    }
 
 
 
