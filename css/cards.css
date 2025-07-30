@@ -1,5 +1,8 @@
 /***********************************************************/
 
+.whiteText{
+    color: #f3f3f3 !important;
+}
 .cards{
     margin-top: 00px;
     display: flex;
@@ -55,7 +58,7 @@
     transform: perspective(600px) rotateY(180deg);
     background: rgb(3, 35, 54);
     padding: 15px;
-    color: #f3f3f3;
+    color: #f3f3f3 !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
