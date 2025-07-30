@@ -173,8 +173,9 @@ nav:hover ul {
   margin-top: 8px;
 }
 
+/*aquiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
 nav:hover ul li a {
-  color: rgba(105, 73, 71, 0.5);
+  color: rgba(8, 8, 8, 0.5);
 }
 
 nav .logo img {
@@ -802,6 +803,11 @@ height: 110px;
   .No_GVP{
     padding-top: 60px;
   }
+
+  nav:hover ul li a {
+  color: rgba(8, 8, 8, 0.5);
+  font-weight: bold;
+}
 
   body{
     overflow-x: hidden;
