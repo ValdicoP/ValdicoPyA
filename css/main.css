@@ -146,8 +146,8 @@ nav {
   max-height: 350px;
   background-color: transparentize;
   padding: 10px 0px;
-  position: absolute;
-  top: 10px;
+  position: fixed;
+  top: 0px;
   left: 0px;
   z-index: 1000;
 
@@ -789,8 +789,8 @@ height: 110px;
   }
 
   img{
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 60px;
   }
 
   .No_GVP{
