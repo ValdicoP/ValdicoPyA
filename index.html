@@ -24,29 +24,24 @@
 		content="Avaluos, Construccion, Remodelacion, Ampliacion, Tramites, Gestoris, Desarrollo Urbano, Regularizacion de obras, infonavit, Foviste, Issste">
 	<meta property="og:image" content="https://www.valdicoperezyasociados.com/images/logo_valdico.svg">
 
-	<!--framehorks bootstrap 4.5-->
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/slippry.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	
+
+
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="favicon/img-1.ico?v=2" type="image/x-icon">
 	<link rel="icon" href="favicon/img-1.ico?v=2" type="image/x-icon">
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-	
 	<link rel="shortcut" href="favicon/img-1.ico?v=2" type="image/x-icon"> <!-- navegadores -->
 	<link rel="icon" href="favicon/img-1-ico?v=2" type="image/x-icon">
 
+		<!--framehorks bootstrap 4.5-->
+		
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/slippry.css">
+
+
 	<!-- Responsividad -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!--Font Awesome 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"> CDN-->
-
 
 </head>
 
@@ -314,12 +309,14 @@
 			})
 
 		});	
+		
 		/** Detectar el ancho del diamante y poner el mismo en HEIGHT**/
 		var dn_width = $('.diamante').width();
-		/*console.log(dn_width)*/
+		console.log(dn_width);
 		$(".diamante").css({
 			height: dn_width
 		})
+		
 		/**Agregar clase a la barra de navegacion**/
 		var slider = $("#slider").height();
 		/**alert("la altura del slider es "+ slider)**/
