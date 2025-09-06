@@ -3,6 +3,19 @@
 .whiteText{
     color: #f3f3f3 !important;
 }
+
+.textDiv{
+    color: #20048f !important;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 120px;
+}
 .cards{
     margin-top: 00px;
     display: flex;
@@ -10,7 +23,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    margin-top: 180px;
+    margin-top: 8px;
 
 }
 
@@ -93,4 +106,21 @@
 
 .cardValdico:hover .backcard{
    transform: perspective(600px) rotateY(360deg); 
+}
+
+/***********************************************************/
+
+/*# sourceMappingURL=cards.css.map */
+
+    @media screen and (max-width: 768px) {
+        .textDiv {
+            margin-top: 160px;
+            font-size: 24px;
+        }
+
+        .menu ul {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
 }
