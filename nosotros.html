@@ -66,8 +66,8 @@
 				<div class="col-sm-12 col-md-10 menu">
 					<ul>
 						<li><a href="index.html">Inicio</a></li>
-						<li class="link-active"><a href="PaginEnConstruccion.html">Nosotros</a></li>
-						<li><a href="portafolio-digital.html">Portafolio</a></li>
+						<li class="link-active"><a href="nosotros.html">Nosotros</a></li>
+						<li><a href="portafolio.html">Portafolio</a></li>
 						<li><a href="PaginEnConstruccion.html">Contacto</a></li>
 					</ul>
 				</div>
@@ -224,8 +224,8 @@
                 <div class="row">
                     <!--col 2-->
                     <div class="col-xl-2">
-                        <p class="white"><strong>Mapa del sitio</strong></p>
-                        <ul class="white">
+                        <p class="white center"><strong>Mapa del sitio</strong></p>
+                        <ul class="white center">
                             <li class="small">Inicio</li>
                             <li class="small">Nosotros</li>
                             <li class="small">Portafolio</li>
@@ -309,88 +309,7 @@
 	<script src="js/slippry.min.js"></script>
     <script src="js/lightbox.min.js"></script>
 
-	<!--Activacion slider y script-->
-	<script>
-		$(document).ready(function(){
-
-            /**Activando lightbox**/
-            lightbox.option({
-                'resizeDuration': 200,
-                'disableScrolling': true
-            });
-
-        /** Detectar el ancho del diamante y poner el mismo en HEIGHT**/
-		var dn_width = $('#portafolio').width();
-		console.log(dn_width)
-		$("#portafolio").css({
-			height: dn_width
-		})
-			
-
-
-		/**alert("la altura del slider es "+ slider)**/
-		$(window).scroll(function(){
-			var scroll = $(window).scrollTop(); 
-			if(scroll>=$("#nosotros").offset().top-300){
-				$('#nav').addClass("nav-overlay");
-			}else{
-				$('#nav').removeClass("nav-overlay");
-			}
-		});
-		$(window).scroll();
-    });
-	</script>
-
-    <script>
-  const modal = document.getElementById("modal");
-  const modalImg = document.getElementById("modalImg");
-  const closeBtn = document.getElementById("closeBtn");
-  const openSound = document.getElementById("openSound");
-  const closeSound = document.getElementById("closeSound");
-  const closeNav = document.getElementById("nav");
-
-  const images = document.querySelectorAll(".gallery img");
-  let currentIndex = 0;
-
-  function openModal(index) {
-    const img = images[index];
-    modalImg.src = img.dataset.full;
-    modal.style.display = "flex";
-    openSound.play();
-	closeNav.style.display = "none"
-
-    currentIndex = index;
-  }
-
-  function closeModal() {
-    modal.style.display = "none";
-    modalImg.src = "";
-    closeSound.play();
-  }
-
-  images.forEach((img, index) => {
-    img.addEventListener("click", () => openModal(index));
-  });
-
-  closeBtn.addEventListener("click", closeModal);
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) closeModal();
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (modal.style.display === "flex") {
-      if (e.key === "Escape") {
-        closeModal();
-      } else if (e.key === "ArrowRight") {
-        currentIndex = (currentIndex + 1) % images.length;
-        openModal(currentIndex);
-      } else if (e.key === "ArrowLeft") {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        openModal(currentIndex);
-      }
-    }
-  });
-</script>
+    <script src="js/main.js"></script>
 
 </body>
 
