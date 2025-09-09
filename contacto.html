@@ -47,20 +47,19 @@
     <!--LightBox JS-->
     <link rel="stylesheet" href="css/lightbox.min.css">
 </head>
-
 <body>
 	<!-- Barra de navegacion -->
 	<nav id="nav" clase="nav-overlay">
 		<div class="container-fluid">
 			<div class="row">
 				<!--Nuestro logo-->
-				<div class="col-xl-2">
+				<div class="col-sm-12 col-md-2 logo">
 					<a href="www.facebook.com" class="logo">
 						<img src="images/LogoV.png" alt="logo_valdico">
 					</a>
 				</div>
 				<!-- Nuestros links de navegacion -->
-				<div class="col-xl-10">
+				<div class="col-sm-12 col-md-10">
 					<ul>
 						<li><a href="index.html">Inicio</a></li>
 						<li><a href="nosotros.html">Nosotros</a></li>
@@ -74,22 +73,25 @@
 	<!-- ends Barra de navegacion -->
 
     <!--Contacto-->
-    <div id="contacto">
-        <ul>
-            <li class="google-maps"></li><!--Imagen del mapa-->
-            <li class="formulario">
-                <h3>contactanos</h3>
-                    <form action="procesos/sumit.php" method="post">
-                    <input type="name" name="Nombre" placeholder="Tu nombre">
-                    <input type="email" name="Email" placeholder="Tu e-mail">
-                    <input type="tel" name="tel" placeholder="Tu telefono">
-                    <textarea name="mensaje" id="" placeholder="Tu mensaje"></textarea>
-                    <button type="submit" name="submit" class="black">Enviar</button>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 contacto center">
+                <p>
+                    Envianos un correo.
+                </p>
+                <form action="https://formsubmit.co/jromero7108@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <textarea name="message" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
                 </form>
-            </li>
-        </ul>
+                
+            </div>
+        </div>
     </div>
-    <br><br><br>
+    
     <!--End Contacto-->
 
 		<!-- footer -->
@@ -98,8 +100,8 @@
                 <div class="row">
                     <!--col 2-->
                     <div class="col-xl-2">
-                        <p class="white"><strong>Mapa del sitio</strong></p>
-                        <ul class="white">
+                        <p class="white center"><strong>Mapa del sitio</strong></p>
+                        <ul class="white center">
                             <li class="small">Inicio</li>
                             <li class="small">Nosotros</li>
                             <li class="small">Portafolio</li>
@@ -148,8 +150,8 @@
                     <!--End col 6-->
                 </div>
             </div> 
-         </footer>
-
+        
+        </footer>
          <div class="copy">
             <div class="container">
                 <div class="row">
@@ -170,7 +172,7 @@
         </div>
 
 	<!--Bootstrap 4 JS CDN-->
-
+    <section>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
@@ -260,7 +262,8 @@
     }
   });
 </script>
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
+    </section>
 
 </body>
 
